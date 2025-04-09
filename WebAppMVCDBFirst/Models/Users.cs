@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using WebAppMVCDBFirst.core.enums;
 
 namespace WebAppMVCDBFirst.Models;
 
@@ -23,7 +24,8 @@ public partial class Users
 
     public string Lastname { get; set; } = null!;
 
-    public string UserRole { get; set; } = null!;
+    // correct string --> UserRole
+    public UserRole? UserRole { get; set; } = null!;
 
     [InverseProperty("User")]
     public virtual Students? Students { get; set; }
