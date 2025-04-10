@@ -1,5 +1,3 @@
-/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/appsettings.Development.json
-/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/appsettings.json
 /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/WebAppMVCDBFirst.staticwebassets.runtime.json
 /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/WebAppMVCDBFirst.staticwebassets.endpoints.json
 /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/WebAppMVCDBFirst
