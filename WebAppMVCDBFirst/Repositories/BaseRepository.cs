@@ -19,8 +19,7 @@ public class BaseRepository<T> : IBaseRepository<T> where T : class
     }
     
     /// <summary>
-    /// Adds a new record.
-    /// AddAsync() puts the entity in the change tracker with the state Added.
+    /// Adds a new record , puts the entity in the change tracker with the state Added.
     /// This does not hit the database yet.
     /// When we call dbContext.SaveChangesAsync(), EF will run an INSERT INTO SQL.
     /// </summary>
