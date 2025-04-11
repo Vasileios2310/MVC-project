@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HcH9y/1Y8wE=",
+  "dgSpecHash": "ZgfbeQJn1q0=",
   "success": true,
   "projectFilePath": "/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/WebAppMVCDBFirst.csproj",
   "expectedPackageFiles": [
+    "/Users/vasiliskr/.nuget/packages/bcrypt.net-core/1.6.0/bcrypt.net-core.1.6.0.nupkg.sha512",
     "/Users/vasiliskr/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/vasiliskr/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "/Users/vasiliskr/.nuget/packages/microsoft.build.framework/17.8.3/microsoft.build.framework.17.8.3.nupkg.sha512",
