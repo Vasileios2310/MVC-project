@@ -24,7 +24,7 @@ public class TeacherRepository : BaseRepository<Teachers>, ITeacherRepository
             return teachersCoursesList;
     }
 
-    public async Task<List<Users>> GetAllUsersAsync()
+    public async Task<List<Users>> GetAllUsersTeachersAsync()
     {
         var usersWithTeacherRole = await dbContext.Users
                                                              .Where(u=> u.UserRole == UserRole.Teacher)

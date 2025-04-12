@@ -6,7 +6,7 @@ public interface ITeacherRepository
 {
     Task<List<Courses>> GetTeacherCoursesAsync(int Id);
     Task<Teachers?> GetTeacherByNumberAsync(string phoneNumber);
-    Task<List<Users>> GetAllUsersAsync();
+    Task<List<Users>> GetAllUsersTeachersAsync();
     Task<List<Users>> GetAllUsersTeachersPaginatedAsync(int pageNumber, int pageSize);
     Task<Users?> GetUserTeacherByUserNameAsync(string userName);
     Task<PaginatedResult<Users>> GetPaginatedUsersTeachersAsync(int pageNumber, int pageSize);
