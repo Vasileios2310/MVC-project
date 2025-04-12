@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebAppMVCDBFirst.Models;
+using WebAppMVCDBFirst.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +9,10 @@ var connString = builder.Configuration.GetConnectionString("DefaultConnection");
 // AddDbContext is scoped - per request a new instance  of dbcontext is created
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(connString));
 
+builder.Services.AddRepositories();
+
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 

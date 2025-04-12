@@ -2,7 +2,7 @@ namespace WebAppMVCDBFirst.Repositories;
 
 public interface IUnitOfWork
 {
-    // UserRepository  ToDo
+    UserRepository UserRepository { get; }
     TeacherRepository TeacherRepository { get; }
     StudentRepository StudentRepository { get; }
     CourseRepository CourseRepository { get; }
