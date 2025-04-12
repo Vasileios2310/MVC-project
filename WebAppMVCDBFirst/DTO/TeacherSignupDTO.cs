@@ -12,7 +12,9 @@ public class TeacherSignupDTO
     [EmailAddress (ErrorMessage = "Invalid email address")]
     public string? Email { get; set; }
     
-    [RegularExpression(@"(?=.*?[A-Z])(?=.*?[a-z])(?=.*?\d)(?=.*?\W[!@#$%])^.{8,}$")]
+    [RegularExpression(@"(?=.*?[A-Z])(?=.*?[a-z])(?=.*?\d)(?=.*?\W[!@#$%])^.{8,}$", 
+        ErrorMessage = "Password must contain at least 8 characters and at least one digit," +
+                       " one uppercase letter, one lowercase letter, and one special character")]
     public string? Password { get; set; }
     
     [StringLength(50, MinimumLength = 3 , ErrorMessage = "Firstname must be between 3 and 50 characters")]
