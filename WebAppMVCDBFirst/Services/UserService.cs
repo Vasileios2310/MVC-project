@@ -35,13 +35,47 @@ public class UserService : IUserService
         return user;
     }
 
-    public Task<Users?> GetUserByUserNameAsync(string userName)
+    public async Task<Users?> GetUserByUserNameAsync(string userName)
     {
-        throw new NotImplementedException();
+        Users? user = null;
+        try
+        {
+            user = await _unitOfWork.UserRepository.GetByUsernameAsync(userName);
+            _logger.LogInformation($"User {userName} is found.");
+        }
+        catch (Exception e)
+        {
+            _logger.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+        }
+        return user;
     }
 
-    public Task<List<Users>> GetAllUsersFilteredAsync(int pageNumber, int pageSize, UserFiltersDTO userFiltersDTO)
+    public async Task<List<Users>> GetAllUsersFilteredAsync(int pageNumber, int pageSize, UserFiltersDTO userFiltersDTO)
     {
-        throw new NotImplementedException();
+        List<Users> users = new();
+        List<Func<Users, bool>> predicates = new();
+
+        try
+        {
+            if (!string.IsNullOrEmpty(userFiltersDTO.Username))
+            {
+                predicates.Add(u => u.Username == userFiltersDTO.Username);
+            }
+            if (!string.IsNullOrEmpty(userFiltersDTO.Email))
+            {
+                predicates.Add(u => u.Email == userFiltersDTO.Email);
+            }
+            if (!string.IsNullOrEmpty(userFiltersDTO.UserRole))
+            {
+                predicates.Add(u=> u.UserRole.ToString() == userFiltersDTO.UserRole);
+            }
+            users = await _unitOfWork.UserRepository.GetAllUsersFilteredPaginatedAsync(pageNumber, pageSize, predicates);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("{Message}{Exception}", ex.Message , ex.StackTrace);
+            throw;
+        }
+        return users;
     }
 }

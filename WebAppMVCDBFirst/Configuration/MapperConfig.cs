@@ -4,8 +4,5 @@ namespace WebAppMVCDBFirst.Configuration;
 
 public class MapperConfig : Profile
 {
-    protected MapperConfig()
-    {
-        
-    }
+    protected MapperConfig() { }
 }
