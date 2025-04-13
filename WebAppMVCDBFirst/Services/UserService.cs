@@ -1,4 +1,5 @@
 using AutoMapper;
+using Serilog;
 using WebAppMVCDBFirst.core.Filters;
 using WebAppMVCDBFirst.DTO;
 using WebAppMVCDBFirst.Models;
@@ -12,11 +13,11 @@ public class UserService : IUserService
     private readonly IMapper _mapper;
     private readonly ILogger<UserService> _logger;
 
-    public UserService(IUnitOfWork unitOfWork, IMapper mapper, ILogger<UserService> logger)
+    public UserService(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
-        _logger = logger;
+        _logger = new LoggerFactory().AddSerilog().CreateLogger<UserService>();
     }
 
     public async Task<Users?> VerifyAndGetUserAsync(UserLoginDTO credentials)

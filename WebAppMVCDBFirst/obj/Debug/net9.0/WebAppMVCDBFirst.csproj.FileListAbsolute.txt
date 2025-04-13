@@ -210,3 +210,13 @@
 /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/obj/Debug/net9.0/WebAppMV.B81DDD8B.Up2Date
 /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/AutoMapper.dll
 /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/BCrypt.Net-Core.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/appsettings.json
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.AspNetCore.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.Extensions.Hosting.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.Extensions.Logging.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.Formatting.Compact.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.Settings.Configuration.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.Sinks.Console.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.Sinks.Debug.dll
+/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/bin/Debug/net9.0/Serilog.Sinks.File.dll

@@ -9,6 +9,4 @@ public interface IUserService
     Task<Users?> VerifyAndGetUserAsync(UserLoginDTO credentials);
     Task<Users?> GetUserByUserNameAsync(string userName);
     Task<List<Users>> GetAllUsersFilteredAsync(int pageNumber, int pageSize, UserFiltersDTO userFiltersDTO);
-    
-    
 }

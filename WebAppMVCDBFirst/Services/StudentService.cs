@@ -1,4 +1,5 @@
 using AutoMapper;
+using Serilog;
 using WebAppMVCDBFirst.Models;
 using WebAppMVCDBFirst.Repositories;
 
@@ -10,11 +11,11 @@ public class StudentService : IStudentService
     private readonly IMapper _mapper;
     private readonly ILogger<StudentService> _logger;
 
-    public StudentService(IUnitOfWork unitOfWork, IMapper mapper, ILogger<StudentService> logger)
+    public StudentService(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
-        _logger = logger;
+        _logger = new LoggerFactory().AddSerilog().CreateLogger<StudentService>();
     }
 
     public async Task<IEnumerable<Users>> GetAllStudentsAsync()
