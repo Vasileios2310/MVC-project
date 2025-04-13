@@ -176,3 +176,177 @@ System.MissingMethodException: No parameterless constructor defined for type 'We
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 [13-04-2025 12:55:25211 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/""" - 500 null "text/html; charset=utf-8" 28.445ms
 [13-04-2025 12:55:36650 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[13-04-2025 12:57:38015 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"/Users/vasiliskr/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+[13-04-2025 12:57:38097 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5015"
+[13-04-2025 12:57:38098 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[13-04-2025 12:57:38098 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[13-04-2025 12:57:38098 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst"
+[13-04-2025 12:57:38538 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/""" - null null
+[13-04-2025 12:57:38550 +03:00 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware ] Failed to determine the https port for redirect.
+[13-04-2025 12:57:38596 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)"'
+[13-04-2025 12:57:38612 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "WebAppMVCDBFirst.Controllers.UserController" ("WebAppMVCDBFirst").
+[13-04-2025 12:57:38712 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)" in 97.418ms
+[13-04-2025 12:57:38717 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)"'
+[13-04-2025 12:57:38717 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: No parameterless constructor defined for type 'WebAppMVCDBFirst.Configuration.MapperConfig'.
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)
+   at AutoMapper.MapperConfigurationExpression.AddProfile(Type profileType)
+   at AutoMapper.MapperConfigurationExpression.AddMapsCore(IEnumerable`1 assembliesToScan)
+   at AutoMapper.MapperConfigurationExpression.AddMaps(IEnumerable`1 assembliesToScan)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c__DisplayClass13_0.<AddAutoMapperClasses>b__2(MapperConfigurationExpression options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__13_4(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__13_5(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[13-04-2025 12:57:38737 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/""" - 500 null "text/html; charset=utf-8" 200.1798ms
+[13-04-2025 12:58:56417 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[13-04-2025 12:59:04091 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"/Users/vasiliskr/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+[13-04-2025 12:59:04176 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5015"
+[13-04-2025 12:59:04177 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[13-04-2025 12:59:04178 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[13-04-2025 12:59:04178 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst"
+[13-04-2025 12:59:04947 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/""" - null null
+[13-04-2025 12:59:04958 +03:00 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware ] Failed to determine the https port for redirect.
+[13-04-2025 12:59:05022 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)"'
+[13-04-2025 12:59:05042 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "WebAppMVCDBFirst.Controllers.UserController" ("WebAppMVCDBFirst").
+[13-04-2025 12:59:05155 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executing action method "WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)" - Validation state: Valid
+[13-04-2025 12:59:05157 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action method "WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.4759ms.
+[13-04-2025 12:59:05166 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "Login".
+[13-04-2025 12:59:05243 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "Login" executed in 77.2249ms.
+[13-04-2025 12:59:05243 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)" in 200.5494ms
+[13-04-2025 12:59:05243 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)"'
+[13-04-2025 12:59:05244 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/""" - 200 null "text/html; charset=utf-8" 298.2459ms
+[13-04-2025 12:59:05264 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/lib/bootstrap/dist/css/bootstrap.min.css""" - null null
+[13-04-2025 12:59:05267 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/css/site.css""?v=zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD-cbo" - null null
+[13-04-2025 12:59:05269 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/lib/jquery/dist/jquery.min.js""" - null null
+[13-04-2025 12:59:05270 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/WebAppMVCDBFirst.styles.css""?v=pxpD8ZwQ27VwU7JmPO5ewgLhssfUhJYNxddtZjx9yxw" - null null
+[13-04-2025 12:59:05272 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/lib/bootstrap/dist/js/bootstrap.bundle.min.js""" - null null
+[13-04-2025 12:59:05272 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "GET" "http"://"localhost:5015""""/js/site.js""?v=y_Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM" - null null
+[13-04-2025 12:59:05272 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05272 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05272 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05272 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05273 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05273 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05284 +03:00 Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker ] Sending file. Request path: '"js/site.js"'. Physical path: '"/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/obj/Debug/net9.0/compressed/aq8hty4qmi-fr7q2aak1r.gz"'
+[13-04-2025 12:59:05285 +03:00 Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker ] Sending file. Request path: '"WebAppMVCDBFirst.styles.css"'. Physical path: '"/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/obj/Debug/net9.0/compressed/26r9e1w08v-fi10jo81ar.gz"'
+[13-04-2025 12:59:05285 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05285 +03:00 Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker ] Sending file. Request path: '"lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/obj/Debug/net9.0/compressed/gm8rky1icx-493y06b0oq.gz"'
+[13-04-2025 12:59:05285 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05285 +03:00 Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker ] Sending file. Request path: '"css/site.css"'. Physical path: '"/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/obj/Debug/net9.0/compressed/3aphcy6ysd-lugek5hnai.gz"'
+[13-04-2025 12:59:05284 +03:00 Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker ] Sending file. Request path: '"lib/jquery/dist/jquery.min.js"'. Physical path: '"/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/obj/Debug/net9.0/compressed/plx59y5h0m-o1o13a6vjx.gz"'
+[13-04-2025 12:59:05285 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/js/site.js""?v=y_Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM" - 200 260 "text/javascript" 12.8418ms
+[13-04-2025 12:59:05285 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05286 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/WebAppMVCDBFirst.styles.css""?v=pxpD8ZwQ27VwU7JmPO5ewgLhssfUhJYNxddtZjx9yxw" - 200 1118 "text/css" 15.9818ms
+[13-04-2025 12:59:05286 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/lib/bootstrap/dist/js/bootstrap.bundle.min.js""" - 200 80764 "text/javascript" 13.299ms
+[13-04-2025 12:59:05286 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05286 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05288 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/css/site.css""?v=zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD-cbo" - 200 670 "text/css" 20.8948ms
+[13-04-2025 12:59:05288 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/lib/jquery/dist/jquery.min.js""" - 200 87576 "text/javascript" 19.4894ms
+[13-04-2025 12:59:05294 +03:00 Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker ] Sending file. Request path: '"lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"/Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/obj/Debug/net9.0/compressed/f5m1kk2yzx-46ein0sx1k.gz"'
+[13-04-2025 12:59:05297 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"Microsoft.AspNetCore.Routing.RouteEndpoint"'
+[13-04-2025 12:59:05299 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "GET" "http"://"localhost:5015""""/lib/bootstrap/dist/css/bootstrap.min.css""" - 200 232871 "text/css" 35.146ms
+[13-04-2025 12:59:41982 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/1.1" "POST" "http"://"localhost:5015""""/""" - "application/x-www-form-urlencoded" 267
+[13-04-2025 12:59:41990 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)"'
+[13-04-2025 12:59:42011 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(WebAppMVCDBFirst.DTO.UserLoginDTO)" on controller "WebAppMVCDBFirst.Controllers.UserController" ("WebAppMVCDBFirst").
+[13-04-2025 12:59:42044 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executing action method "WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)" - Validation state: Valid
+[13-04-2025 12:59:42896 +03:00 WebAppMVCDBFirst.Services.UserService ] "The LINQ expression 'DbSet<Users>()
+    .Where(u => u.Username == __username_0 || u.Email == __username_0 && EncryptionUtil.IsValidPassword(
+        rawPassword: __password_1, 
+        cipherText: u.Password))' could not be translated. Additional information: Translation of method 'WebAppMVCDBFirst.Security.EncryptionUtil.IsValidPassword' failed. If this method can be mapped to your custom function, see https://go.microsoft.com/fwlink/?linkid=2132413 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.""   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at WebAppMVCDBFirst.Repositories.UserRepository.GetUserAsync(String username, String password) in /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/Repositories/UserRepository.cs:line 13
+   at WebAppMVCDBFirst.Services.UserService.VerifyAndGetUserAsync(UserLoginDTO credentials) in /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/Services/UserService.cs:line 28"
+[13-04-2025 12:59:42898 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)" in 886.3543ms
+[13-04-2025 12:59:42899 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"WebAppMVCDBFirst.Controllers.UserController.Login (WebAppMVCDBFirst)"'
+[13-04-2025 12:59:42900 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The LINQ expression 'DbSet<Users>()
+    .Where(u => u.Username == __username_0 || u.Email == __username_0 && EncryptionUtil.IsValidPassword(
+        rawPassword: __password_1, 
+        cipherText: u.Password))' could not be translated. Additional information: Translation of method 'WebAppMVCDBFirst.Security.EncryptionUtil.IsValidPassword' failed. If this method can be mapped to your custom function, see https://go.microsoft.com/fwlink/?linkid=2132413 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at WebAppMVCDBFirst.Repositories.UserRepository.GetUserAsync(String username, String password) in /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/Repositories/UserRepository.cs:line 13
+   at WebAppMVCDBFirst.Services.UserService.VerifyAndGetUserAsync(UserLoginDTO credentials) in /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/Services/UserService.cs:line 28
+   at WebAppMVCDBFirst.Controllers.UserController.Login(UserLoginDTO credentials) in /Users/vasiliskr/7.C# .NET/WebAppMVCDBFirst/WebAppMVCDBFirst/Controllers/UserController.cs:line 39
+   at lambda_method31(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[13-04-2025 12:59:42916 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/1.1" "POST" "http"://"localhost:5015""""/""" - 500 null "text/html; charset=utf-8" 933.2822ms
+[13-04-2025 12:59:51133 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
